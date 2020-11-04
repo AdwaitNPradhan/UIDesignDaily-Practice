@@ -1,79 +1,77 @@
-    @import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Sarala', monospace;
-        background-color: #273C56;
-        color: #fff;
-        font-size: 14px;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    .statboard {
-        border-radius: 6px;
-        width: 70%;
-        transform: scaleY(1);
-        background-color: #152436;
-        box-shadow: 0px 5px 9px #162435;
-    }
-    
-    .headi,
-    .foot {
-        text-align: center;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-    }
-    
+@import url("https://fonts.googleapis.com/css2?family=Sarala&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sarala", monospace;
+    background-color: #273c56;
+    color: #fff;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.statboard {
+    border-radius: 6px;
+    width: 70%;
+    transform: scaleY(1);
+    background-color: #152436;
+    box-shadow: 0px 5px 9px #162435;
+}
+
+.headi,
+.foot {
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0rem 5rem 0rem 5rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.headi {
+    font-size: 20px;
+}
+
+.foot {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
     .items {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0rem 5rem 0rem 5rem;
-    }
-    
-    .item {
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        padding: 2rem 1rem 2rem 1rem;
+        padding: 0rem 2rem 0rem 2rem;
     }
-    
-    .headi {
-        font-size: 20px;
+    body {
+        height: 100%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
-    
-    .foot {
-        font-size: 14px;
-    }
-    
-    h2 {
-        font-size: 30px;
-        padding-bottom: 1rem;
-        color: #fff;
-    }
-    
-    @media (max-width: 800px) {
-        .items {
-            flex-direction: column;
-            padding: 0rem 2rem 0rem 2rem;
-        }
-        .item {
-            padding: 1rem 5rem 1rem 5rem
-        }
-        body {
-            height: 100%;
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
-    }
+}
