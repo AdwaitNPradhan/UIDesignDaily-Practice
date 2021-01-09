@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    background-color: #00000000;
+    font-family: 'Mukta',
+        sans-serif;
+}
+
+#mainContainer {
+    height: 75%;
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 16px #84899C;
+    border-radius: 0.4em;
+    overflow: hidden;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 95%;
+    border-radius: 0.3em;
+    width: 95%;
+    overflow: hidden;
+}
+
+#leftPanel {
+    height: 100%;
+    width: 50%;
+    color: #F4F3FB;
+    text-align: start;
+    background: rgb(170, 135, 227);
+    background: linear-gradient(153deg, rgba(170, 135, 227, 1) 26%, rgba(115, 95, 205, 1) 91%);
+}
+
+#leftPanel>#contain1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 93%;
+    border: 1px solid red;
+    margin: 1em;
+}
+
+#rightPanel {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+    color: #44319b;
+    margin-left: 1.2em;
+}
+
+#rightPanel>#contain2 {
+    border: 1px solid red;
+    padding: 3em;
+    height: 100%;
+}
+
+#inForm,
+form {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+}
+
+Form>button {
+    color: #F4F3FB;
+    background-color: #735FCD;
+}
+
+#inForm>input {
+    color: #84899C;
+    border: 2px solid #F4F3FB;
+    height: 3em;
+    font-family: 'Mukta',
+        sans-serif;
+}
+
+#inForm>input:focus {
+    color: #84899C;
+    border: 2px solid #84899C;
+}
+
+/* 
+@media(max-width: 1000px) {
+    #container {}
+} */
